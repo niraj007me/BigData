@@ -1,0 +1,16 @@
+[cloudera@quickstart ~]$ su
+Password: 
+[root@quickstart cloudera]# cd /home/cloudera/workspace
+[root@quickstart workspace]# mkdir Shared-laptop
+[root@quickstart workspace]# ls -l
+total 28
+drwxrwxr-x 5 cloudera cloudera 4096 Feb  7 07:47 avgscore
+drwxrwxr-x 5 cloudera cloudera 4096 Feb  1 07:48 maxtemp
+drwxr-xr-x 2 root     root     4096 Feb 20 21:12 projects
+drwxr-xr-x 2 root     root     4096 May 20 05:26 Shared-laptop
+drwxrwxr-x 6 cloudera cloudera 4096 Oct 23  2017 training
+drwxrwxr-x 5 cloudera cloudera 4096 Feb 21 22:41 udf_example
+drwxrwxr-x 5 cloudera cloudera 4096 Feb  7 07:17 wordcount
+
+[root@quickstart workspace]# mount -t vboxsf BigData-Material  /home/cloudera/workspace/Shared-laptop/
+[root@quickstart workspace]# 
